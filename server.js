@@ -14,11 +14,3 @@ const connection = mysql.createConnection({
     password: "",
     database: "trackerDB"
   });
-
-inquirer
-  .prompt([
-
-  ])
-  .then(function(response){
-
-  })
