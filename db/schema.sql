@@ -12,4 +12,4 @@ CREATE TABLE role (
   id INT PRIMARY KEY,
   title VARCHAR(30),
   salary DECIMAL(10,4) NULL
-)
+);
