@@ -3,11 +3,11 @@ const mysql = require("mysql");
 
 const connection = mysql.createConnection({
     //put this info into .env, replace info with process.env
-  host: "localhost",  
-  port: 3306,
-  user: "root",
+  host: "",  
+  port: ;
+  user: "",
   password: "",
-  database: "trackerDB"  
+  database: ""  
   });
 
   connection.connect(function(err) {
