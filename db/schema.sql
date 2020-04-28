@@ -5,7 +5,9 @@ USE trackerDB;
 
 CREATE TABLE department (
   id INT PRIMARY KEY,  
-  dept_name VARCHAR(30),  
+  dept_name VARCHAR(30), 
+  dept_id INT NOT NULL,
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
