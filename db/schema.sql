@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS;
+DROP DATABASE IF EXISTS trackerDB;
 
 CREATE database trackerDB;
 USE trackerDB;
