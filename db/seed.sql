@@ -5,6 +5,7 @@ INSERT INTO department (
   name
 )
 VALUES (
+  1,
 
 );
 

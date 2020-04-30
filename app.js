@@ -7,7 +7,7 @@ inquirer
     {
       type: "input",
       message: "",
-      name: ""
+      name: "Department Name"
     },
     {
       type: "",
