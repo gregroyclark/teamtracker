@@ -5,7 +5,7 @@ const fs = require("fs");
 inquirer
   .prompt([
     {
-      type: "",
+      type: "input",
       message: "",
       name: ""
     },
@@ -19,13 +19,17 @@ inquirer
       message: "",
       name: ""
     }
-  ])
-  .then(function(response) {
+  ]).then(function(data) {
 
-    if (response.confirm === response.password) {
-      console.log("");
+    var employee = data.name.toLowerCase().split(' ').join('') + ".json";
+
+  fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+
+    if (err) {
+      return console.log(err);
     }
-    else {
-      console.log("");
-    }
+
+    console.log("Success!");
+
   });
+});
