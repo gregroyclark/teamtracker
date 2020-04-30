@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql");
 const fs = require("fs");
+const table = require("console.table");
+
 
 inquirer
   .prompt([
