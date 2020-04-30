@@ -4,6 +4,25 @@ INSERT INTO department (
   id,
   name
 )
-VALUE (
+VALUES (
+
+);
+
+INSERT INTO role (
 
 )
+VALUES (
+
+
+);
+
+INSERT INTO employee (
+  id,
+  firstName,
+  lastName,
+  role_id,
+  mgr_id  
+)
+VALUES (
+
+);
