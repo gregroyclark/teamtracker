@@ -1,9 +1,7 @@
-const express = require("express");
-const inquirer = require("inquirer");
 const mysql = require("mysql");
+const inquirer = require("inquirer");
+const table = require("console.table");
 const dotenv = require("dotenv");
-
-const app = express();
 
 const connection = mysql.createConnection({
     //put this info into .env, replace info with process.env
