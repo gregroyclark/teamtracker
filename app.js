@@ -2,11 +2,14 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const table = require("console.table");
+const util = require("util");
 
 require('dotenv').config();
 
-inquirer
-  .prompt([
+const writeFileAsync = util.promisify(fs.writeFile);
+
+function promptUser() {
+  return inquirer.prompt([
     {
       type: "input",
       message: "",
@@ -22,7 +25,10 @@ inquirer
       message: "",
       name: ""
     }
-  ]).then(function(data) {
+  ]);
+}
+  
+  .then(function(data) {
 
     var employee = data.name.toLowerCase().split(' ').join('') + ".json";
 
