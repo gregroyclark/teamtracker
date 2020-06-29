@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const table = require("console.table");
 
+require('dotenv').config();
 
 inquirer
   .prompt([
